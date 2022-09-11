@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers between 00 to 89 seperated by commas
+ * main - prints 01, 02, 03, 04, 05, 06, 07, 08, 09, 12, 13, 14, 15,...
  *
  * Return: Always 0 (Success)
  */

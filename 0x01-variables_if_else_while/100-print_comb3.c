@@ -1,35 +1,31 @@
 #include <stdio.h>
-
 /**
- * main - prints 01, 02, 03, 04, 05, 06, 07, 08, 09, 12, 13, 14, 15,...
+ * main - entry point
  *
- * Return: Always 0 (Success)
+ * funtion main - a program that prints all possible
+ *
+ * Return: 0
  */
 int main(void)
 {
-	int i, e;
+	int i;
+	int j;
 
-	i = 48;
-	e = 48;
-
-	while (e < 58)
+	for (i = 10; i <= 19; i++)
 	{
-		i = 48;
-		while (i < 58)
+		for (j = 10; j <= 19; j++)
 		{
-			if (e != i && e < i)
+			if ((j % 10) > (i % 10))
 			{
-				putchar(e);
-				putchar(i);
-				if (i == 57 && e == 56)
+				putchar((i % 10) + '0');
+				putchar((j % 10) + '0');
+				if (i != 18 || j != 19)
 				{
-
-					break;
+					putchar(',');
+					putchar(' ');
 				}
 			}
-			i++;
 		}
-		e++;
 	}
 	putchar('\n');
 	return (0);

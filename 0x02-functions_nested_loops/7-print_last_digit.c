@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
- * print_last_digit - print last digit of a num
+ * print_last_digit - prints the last digit of a number
+ * @n: The number in question
  *
- * @n: integer to be used
- *
- * Return: last digit of int
- *
+ * Return: Value of the last digit
  */
 int print_last_digit(int n)
 {
